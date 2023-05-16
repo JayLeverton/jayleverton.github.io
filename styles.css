@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Press+Start+2P&display=swap');
+
+:root {
+  /* Active colors --------- */
+  --clr-light: #ffffff;
+  --clr-light-2: #dbdbdb;
+  --clr-light-3: #b1b1b1;
+  --clr-light-4: #7a7a7a;
+  --clr-dark: #636363;
+  --clr-dark-2: #494949;
+  --clr-dark-3: #272727;
+  --clr-dark-4: #131313;
+  --clr-dark-5: #000000;
+  --clr-primary: #bb86fc;
+  --clr-primary-variant: #3700b3;
+  --clr-secondary: #03dac5;
+  --clr-error: #b00020;
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
+  --ff-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  --ff-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+}
+
+.darkmode {
+  --clr-light: #ffffff;
+  --clr-light-2: #dbdbdb;
+  --clr-light-3: #b1b1b1;
+  --clr-light-4: #7a7a7a;
+  --clr-light-5: #6b6b6b;
+  --clr-dark: #636363;
+  --clr-dark-2: #494949;
+  --clr-dark-3: #272727;
+  --clr-dark-4: #131313;
+  --clr-dark-5: #000000;
+  --clr-primary: #bb86fc;
+  --clr-primary-variant: #3700b3;
+  --clr-secondary: #03dac5;
+  --clr-error: #b00020;
+  /* background: radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(0,0,0,1) 100%); */
+}
+
+.lightmode {
+  --clr-light: #ffffff;
+  --clr-light-2: #dbdbdb;
+  --clr-light-3: #c4c4c4;
+  --clr-light-4: #acacac;
+  --clr-light-5: #979797;
+  --clr-dark: #838383;
+  --clr-dark-2: #7c7c7c;
+  --clr-dark-3: #6b6b6b;
+  --clr-dark-4: #525252;
+  --clr-dark-5: #3d3d3d;
+  --clr-primary: #a155ff;
+  --clr-primary-variant: #4c00ff;
+  --clr-secondary: #00ad9c;
+  --clr-error: #b00020;
+  /* background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(163, 163, 163) 100%); */
+}
+
+
+body {
+  background-color: var(--clr-dark-3);
+  color: var(--clr-light);
+  font-family: var(--font-sans);
+  font-size: var(--fz-xl);
+  /* background-color: rgba(109, 105, 173, 0.25); */
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* Calc `em` based line height, bigger line height for smaller font size and smaller line height for bigger font size: https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/ */
+  /* line-height: calc(0.25rem + 1em + 0.25rem); */
+}
+
+html {
+  /* Allow percentage-based heights in the application */
+  block-size: 100%;
+  /* Making sure text size is only controlled by font-size */
+  -webkit-text-size-adjust: none;
+}
+
+.root {
+  display: grid;
+  grid-template-columns: 15%, 70%, 15%;
+}
+
+/* Fix h1 font size inside article, aside, nav, and section */
+h1 {
+  font-size: 2em;
+}
+
+#title {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+#name {
+  letter-spacing: 0.15em;
+  margin-bottom: -5px;
+}
+
+#nameUnderline {
+  letter-spacing: 0.358em;
+  font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGNS */
+/* Mobile Styles */
+/* @media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  } */
+
+/* nav,
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  } */
+/* } */
+
+/* Desktop Styles   -   Desktop Styles   -   Desktop Styles   -   Desktop Styles   -   Desktop Styles */
+/* @media screen and (min-width: 1200px){
+  html {
+    font-size: 15px;
+  }
+  main {
+    margin: 100px 100px 100px 100px;
+  }
+  h2 {
+    padding-bottom: 20px;
+  }
+  #features, #faq, #promotionals {
+    margin-bottom: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  #promotionals {
+    margin-bottom: 0px;
+  }
+  #email {
+    width: 300px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #222222;
+  } */
+
+
+
+/* Inspiration
+  https://jhey.dev/
+  https://brittanychiang.com/
+  https://www.ellyloel.com/projects/
+*/
+
+/*  - How to use variable colours -
+https://www.w3schools.com/css/css3_variables.asp */
