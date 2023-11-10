@@ -12,7 +12,7 @@ const Home = () => {
           {/* rounded-tr-[500px] rounded-tl-[500px] rounded-br-[500px] rounded-bl-[500px] */}
           <img
             className="border-4 border-blue-300 animate-borderWobble md:border-8"
-            src="assets/JL2023.png"
+            src="../assets/JL2023.png"
             alt="a picture of Jay Leverton"
           />
         </div>
