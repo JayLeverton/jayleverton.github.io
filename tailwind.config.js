@@ -14,19 +14,6 @@ export default {
       },
       keyframes: {
         borderWobble: {
-          // '0%': {
-          //   borderRadius: '750px 350px 750px 350px'
-          // },
-          // '33%': {
-          //   borderRadius: '350px 750px 350px 750px'
-          // },
-          // '66%': {
-          //   borderRadius: '350px 750px 350px 750px'
-          // },
-          // '100%': {
-          //   borderRadius: '450px 750px 450px 750px'
-          // }
-
           '0%': {
             borderRadius: '750px 200px 750px 250px / 250px 800px 350px 750px'
           },
@@ -36,7 +23,6 @@ export default {
           '100%': {
             borderRadius: '750px 250px 750px 250px / 250px 750px 250px 750px'
           },
-
         }
       }
     },
