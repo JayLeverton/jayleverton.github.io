@@ -14,7 +14,7 @@ const Navbar = () => {
   // }
 
   return (
-    <nav className="fixed w-full bg-slate-900 border-b">
+    <nav className="fixed w-full bg-[#0d1322] border-b">
       <div className="flex z-30 text-white justify-between px-6 md:px-12 py-5">
         <div className="flex items-center">
           <span className="font-semibold text-2xl">Jay Leverton</span>
