@@ -2,7 +2,7 @@
   "name": "jayleverton.github.io",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://jayleverton.github.io/jayleverton.github.io",
+  "homepage": "https://jayleverton.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
