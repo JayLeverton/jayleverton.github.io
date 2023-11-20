@@ -2,7 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-[#131d35] w-full py-[50px]">
+    <div
+      id="about"
+      className="bg-[#131d35] w-full h-full py-[50px] scroll-mt-[75px]"
+    >
       <div className="container flex flex-col mx-auto w-12/12 md:flex-row md:max-w-5xl ">
         <div className="about-image mx-auto container w-10/12 md:w-6/12 ">
           <img src="" alt="" />

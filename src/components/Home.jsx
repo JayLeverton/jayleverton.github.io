@@ -5,7 +5,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="pt-[100px] w-full pb-[50px] ">
+    <div id="home" className="py-[50px] w-full scroll-mt-[75px]">
       <div className="container flex flex-col mx-auto w-11/12 md:max-w-5xl ">
         {/*  */}
         {/* Portrait and self-summary */}

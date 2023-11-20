@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [hamburgerOverlay, setHamburgerOverlay] = useState(false);
@@ -9,12 +8,8 @@ const Navbar = () => {
     console.log(hamburgerOverlay);
   };
 
-  // const hamburgerOverlayOff = () => {
-  //   setHamburgerOverlay(false)
-  // }
-
   return (
-    <nav className="fixed w-full bg-[#0d1322] border-b">
+    <nav className="sticky top-0 w-full bg-[#0d1322] border-b">
       <div className="flex z-30 text-white justify-between px-6 md:px-12 py-5">
         <div className="flex items-center">
           <span className="font-semibold text-2xl">Jay Leverton</span>
@@ -23,19 +18,19 @@ const Navbar = () => {
         <div className="hidden items-center text-end font-normal md:flex ">
           <div className="flex-1">
             <ul className="flex gap-8 text-lg">
-              <a href="/#">
+              <a className="" href="#home">
                 <li className="hover:text-fuchsia-600 transition">Home</li>
               </a>
-              <a href="/#">
+              <a className="" href="#about">
                 <li className="hover:text-fuchsia-600 transition">About</li>
               </a>
-              <a href="/#">
+              <a className="" href="#projects">
                 <li className="hover:text-fuchsia-600 transition">Projects</li>
               </a>
-              <a href="/#">
+              <a className="" href="#contact">
                 <li className="hover:text-fuchsia-600 transition">Contact</li>
               </a>
-              <a href="/#">
+              <a className="" href="/#">
                 <li className="hover:text-fuchsia-600 transition">Blog</li>
               </a>
             </ul>
@@ -89,8 +84,8 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`hamburger-menu-overlay top-0 z-40 absolute bg-slate-900 h-screen w-screen mx-auto md:hidden ${
-          hamburgerOverlay ? "visible" : "hidden"
+        className={`hamburger-menu-overlay top-0 z-40 absolute bg-slate-900 h-screen w-screen mx-auto transition-transform ease-in-out duration-[400ms] md:hidden ${
+          hamburgerOverlay ? "translate-x-0" : "translate-x-[-800px]"
         }`}
       >
         <button
@@ -122,13 +117,25 @@ const Navbar = () => {
             </g>
           </svg>
         </button>
-        <ul className="z-40 flex flex-col h-screen justify-between text-center text-4xl my-auto py-16 border-[8px] rounded-3xl bg-slate-800 border-slate-900">
-          <li className="">Home</li>
-          <li className="">About</li>
-          <li className="">Projects</li>
-          <li className="">Contact</li>
-          <li className="">Blog</li>
-        </ul>
+        <div className="flex flex-col z-40 h-screen border-slate-900 my-auto text-3xl text-center justify-center">
+          <ul className="flex flex-col gap-[3rem]">
+            <a className="" href="#home" onClick={toggleHamburgerOverlay}>
+              Home
+            </a>
+            <a className="" href="#about" onClick={toggleHamburgerOverlay}>
+              About
+            </a>
+            <a className="" href="#projects" onClick={toggleHamburgerOverlay}>
+              Projects
+            </a>
+            <a className="" href="#contact" onClick={toggleHamburgerOverlay}>
+              Contact
+            </a>
+            <a className="" href="/#" onClick={toggleHamburgerOverlay}>
+              Blog
+            </a>
+          </ul>
+        </div>
       </div>
     </nav>
   );

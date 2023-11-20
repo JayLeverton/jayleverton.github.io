@@ -6,22 +6,26 @@ const ProjectTemplate = () => {
   return (
     // bg-[#0d1424]
 
-    <div className="flex flex-col gap-10 shadow-[0px_0px_5px_5px_rgba(0,0,0,0.2)] rounded-2xl ">
+    <div className="flex flex-col gap-10 shadow-[0px_0px_5px_5px_rgba(0,0,0,0.2)] p-6 rounded-2xl md:even:flex-row md:odd:flex-row-reverse">
       {/*  */}
       {/* Project image container */}
-      <div>
-        <img src="" alt="" />
+      <div className="flex  rounded-xl md:w-7/12 md:max-h-[30rem]">
+        <img
+          className="rounded-xl"
+          src="../assets/placeholder-stock-photo.jpg"
+          alt=""
+        />
       </div>
 
       {/* Project description container */}
-      <div className="flex flex-col gap-5">
-        <span>
+      <div className="flex flex-col gap-5 md:w-5/12 justify-center">
+        <span className="text-center">
           <h4 className="inline text-xl font-semibold">Project Name</h4>
           <h4 className="inline text-lg text-slate-300"> &#40;Date&#41;</h4>
         </span>
 
         {/* Summary text */}
-        <p className="text-slate-300 px-2">
+        <p className="text-center text-slate-300 px-2">
           Project summary that includes the site's purpose and key features.
         </p>
         <div className="flex justify-center align-middle gap-3">
