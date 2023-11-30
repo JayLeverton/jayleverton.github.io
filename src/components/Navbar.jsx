@@ -9,8 +9,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 w-full bg-[#0d1322] border-b">
-      <div className="flex z-30 text-white justify-between px-6 md:px-12 py-5">
+    <nav className="bg-tertiary-bg-color sticky top-0 w-full border-b">
+      <div className="flex z-30 justify-between px-6 md:px-12 py-5">
         <div className="flex items-center">
           <span className="font-semibold text-2xl">Jay Leverton</span>
         </div>
@@ -19,19 +19,29 @@ const Navbar = () => {
           <div className="flex-1">
             <ul className="flex gap-8 text-lg">
               <a className="" href="#home">
-                <li className="hover:text-fuchsia-600 transition">Home</li>
+                <li className="hover:text-highlight-text-color transition">
+                  Home
+                </li>
               </a>
               <a className="" href="#about">
-                <li className="hover:text-fuchsia-600 transition">About</li>
+                <li className="hover:text-highlight-text-color transition">
+                  About
+                </li>
               </a>
               <a className="" href="#projects">
-                <li className="hover:text-fuchsia-600 transition">Projects</li>
+                <li className="hover:text-highlight-text-color transition">
+                  Projects
+                </li>
               </a>
               <a className="" href="#contact">
-                <li className="hover:text-fuchsia-600 transition">Contact</li>
+                <li className="hover:text-highlight-text-color transition">
+                  Contact
+                </li>
               </a>
               <a className="" href="/#">
-                <li className="hover:text-fuchsia-600 transition">Blog</li>
+                <li className="hover:text-highlight-text-color transition">
+                  Blog
+                </li>
               </a>
             </ul>
           </div>
@@ -84,7 +94,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`hamburger-menu-overlay top-0 z-40 absolute bg-slate-900 h-screen w-screen mx-auto transition-transform ease-in-out duration-[400ms] md:hidden ${
+        className={`bg-primary-bg-color hamburger-menu-overlay top-0 z-40 absolute h-screen w-screen mx-auto transition-transform ease-in-out duration-[400ms] md:hidden ${
           hamburgerOverlay ? "translate-x-0" : "translate-x-[-800px]"
         }`}
       >

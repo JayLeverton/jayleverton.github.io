@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="bg-[#0F172A] w-full py-[50px] scroll-mt-[75px]"
+      className="bg-primary-bg-color w-full py-[50px] scroll-mt-[75px]"
     >
       <div className="container flex flex-col mx-auto w-11/12 md:flex-row ">
         <div className="flex flex-col mx-auto w-12/12 gap-5 text-center md:max-w-5xl md:text-left ">

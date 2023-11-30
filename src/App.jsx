@@ -2,7 +2,7 @@
 // BG color ----- #0F172A
 // Secondary BG color ----- #0F172A
 // Highlight color ----- #93C5FD
-// Secondary text color ----- text-slate-300
+// Secondary text color ----- #cbd5e1
 
 import "./index.css";
 import Navbar from "./components/Navbar";

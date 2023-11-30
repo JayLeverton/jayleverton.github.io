@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 :root {
+  --primary-bg-color: #0F172A;
+  --secondary-bg-color: #131d35;
+  --tertiary-bg-color: #0d1322;
+  --highlight-text-color: #93C5FD;
+  --secondary-text-color: #cbd5e1;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,10 +23,11 @@
 
 html {
   scroll-behavior: smooth;
+  color: white;
 }
 
 body {
-  background-color: rgb(15, 23, 42);
+  /* background-color: rgb(15, 23, 42); */
 
 }
 
