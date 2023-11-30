@@ -26,10 +26,10 @@ html {
   color: white;
 }
 
-body {
-  /* background-color: rgb(15, 23, 42); */
+/* body {
+  background-color: rgb(15, 23, 42); 
 
-}
+} */
 
 html, body, #app, #app>div {
   height: 100%
