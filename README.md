@@ -1,2 +1,3 @@
 # Jay Leverton
-(Portfolio Site)[https://jayleverton.github.io/]
+[Portfolio Site](https://jayleverton.github.io/)
+
