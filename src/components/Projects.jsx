@@ -17,9 +17,14 @@ const Projects = () => {
           {/* Projects go */}
           <div className="flex flex-col mx-auto justify-center gap-16 md:max-w-5xl">
             <ProjectTemplate
+              projectName={"Mnemosyne"}
               projectSummary={
-                "Project summary that includes the site's purpose and key features."
+                "A web app for D&D players to efficiently and quickly manage and play their characters. It includes stat editing and management such as HP, hit dice, and a proficiency bonus. The user can roll saves, skills, and ability checks, as well as custom roll inputs defined by formula. Local saving and loading occurs after each change and file saving is also possible, to allow users to have multiple characters and easily transfer them across devices."
               }
+              projectImageLocalLink="../assets/MnemosyneScreenshot.jpg"
+              dateFinished={"2024"}
+              codeLink={"https://github.com/JayLeverton/Mnemosyne/"}
+              demoLink={"https://jayleverton.github.io/Mnemosyne/"}
             ></ProjectTemplate>
             <ProjectTemplate></ProjectTemplate>
             <ProjectTemplate></ProjectTemplate>
