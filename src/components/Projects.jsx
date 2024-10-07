@@ -16,7 +16,11 @@ const Projects = () => {
           {/*  */}
           {/* Projects go */}
           <div className="flex flex-col mx-auto justify-center gap-16 md:max-w-5xl">
-            <ProjectTemplate></ProjectTemplate>
+            <ProjectTemplate
+              projectSummary={
+                "Project summary that includes the site's purpose and key features."
+              }
+            ></ProjectTemplate>
             <ProjectTemplate></ProjectTemplate>
             <ProjectTemplate></ProjectTemplate>
             <ProjectTemplate></ProjectTemplate>

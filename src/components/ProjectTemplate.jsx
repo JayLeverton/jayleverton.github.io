@@ -2,7 +2,13 @@ import React from "react";
 import { GithubSVG } from "./GithubSVG";
 import { PopoutSVG } from "./PopoutSVG";
 
-const ProjectTemplate = () => {
+const ProjectTemplate = ({
+  projectName = "Project Name",
+  projectSummary = "Project summary that includes the site's purpose and key features.",
+  dateFinished = "Date",
+  codeLink = "https://jayleverton.github.io/",
+  demoLink = "https://jayleverton.github.io/",
+}) => {
   return (
     // bg-[#0d1424]
 
@@ -20,14 +26,15 @@ const ProjectTemplate = () => {
       {/* Project description container */}
       <div className="flex flex-col gap-5 md:w-5/12 justify-center">
         <span className="text-center">
-          <h4 className="inline text-xl font-semibold">Project Name</h4>
-          <h4 className="inline text-lg text-slate-300"> &#40;Date&#41;</h4>
+          <h4 className="inline text-xl font-semibold">{projectName}</h4>
+          <h4 className="inline text-lg text-slate-300">
+            {" "}
+            &#40;{dateFinished}&#41;
+          </h4>
         </span>
 
         {/* Summary text */}
-        <p className="text-center text-slate-300 px-2">
-          Project summary that includes the site's purpose and key features.
-        </p>
+        <p className="text-center text-slate-300 px-2">{projectSummary}</p>
         <div className="flex justify-center align-middle gap-3">
           <svg
             width="50px"
@@ -129,22 +136,14 @@ const ProjectTemplate = () => {
 
         {/* Links Container */}
         <div className="links-container flex justify-center gap-10 pt-5 pb-5">
-          <a
-            target="_blank"
-            href="https://github.com/JayLeverton"
-            className="flex items-center"
-          >
+          <a target="_blank" href={codeLink} className="flex items-center">
             <h4 className="text-lg font-semibold">Code</h4>
             <div className="ml-1">
               <GithubSVG size="25px"></GithubSVG>
             </div>
           </a>
 
-          <a
-            target="_blank"
-            href="https://github.com/JayLeverton"
-            className="flex items-center"
-          >
+          <a target="_blank" href={demoLink} className="flex items-center">
             <h4 className="text-lg font-semibold">Live Demo</h4>
             <div className="ml-1">
               <PopoutSVG size="25px"></PopoutSVG>
