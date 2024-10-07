@@ -5,7 +5,7 @@ import { PopoutSVG } from "./PopoutSVG";
 const ProjectTemplate = ({
   projectName = "Project Name",
   projectSummary = "Project summary that includes the site's purpose and key features.",
-  projectImageLocalLink = "../assets/placeholder-stock-photo.jpg",
+  projectImageLocalLink = "/assets/placeholder-stock-photo.jpg",
   dateFinished = "Date",
   codeLink = "https://jayleverton.github.io/",
   demoLink = "https://jayleverton.github.io/",
