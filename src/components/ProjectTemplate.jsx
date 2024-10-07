@@ -18,7 +18,7 @@ const ProjectTemplate = ({
       {/* Project image container */}
       <div className="flex  rounded-xl md:w-7/12 md:max-h-[30rem]">
         <img
-          className="rounded-xl"
+          className="rounded-xl h-full mx-auto shadow-lg shadow-black"
           src={projectImageLocalLink}
           alt="an image to represent the project"
         />
